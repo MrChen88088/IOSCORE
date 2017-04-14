@@ -1,0 +1,548 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FFA834B31E8B91720064533C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FFA834B21E8B91720064533C /* main.m */; };
+		FFA834B61E8B91720064533C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FFA834B51E8B91720064533C /* AppDelegate.m */; };
+		FFA834B91E8B91720064533C /* BD_VoiceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FFA834B81E8B91720064533C /* BD_VoiceVC.m */; };
+		FFA834BC1E8B91720064533C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFA834BA1E8B91720064533C /* Main.storyboard */; };
+		FFA834C11E8B91720064533C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFA834BF1E8B91720064533C /* LaunchScreen.storyboard */; };
+		FFA834CB1E8B91C30064533C /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFA834C91E8B91C30064533C /* CoreTelephony.framework */; };
+		FFA834CC1E8B91C30064533C /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFA834CA1E8B91C30064533C /* CoreText.framework */; };
+		FFA834CE1E8B91CB0064533C /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFA834CD1E8B91CB0064533C /* GLKit.framework */; };
+		FFA834D01E8B91D10064533C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFA834CF1E8B91D10064533C /* QuartzCore.framework */; };
+		FFA834D21E8B91DA0064533C /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFA834D11E8B91DA0064533C /* OpenGLES.framework */; };
+		FFA834D41E8B91E50064533C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFA834D31E8B91E50064533C /* AudioToolbox.framework */; };
+		FFA834D61E8B91EA0064533C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFA834D51E8B91EA0064533C /* AVFoundation.framework */; };
+		FFA834D81E8B91F00064533C /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFA834D71E8B91F00064533C /* CFNetwork.framework */; };
+		FFA834DA1E8B91F60064533C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFA834D91E8B91F60064533C /* CoreGraphics.framework */; };
+		FFA834DC1E8B91FE0064533C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFA834DB1E8B91FE0064533C /* Foundation.framework */; };
+		FFA834DE1E8B920B0064533C /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFA834DD1E8B920B0064533C /* MobileCoreServices.framework */; };
+		FFA834E01E8B92100064533C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFA834DF1E8B92100064533C /* Security.framework */; };
+		FFA834E21E8B92160064533C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFA834E11E8B92160064533C /* SystemConfiguration.framework */; };
+		FFA834E41E8B921B0064533C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFA834E31E8B921B0064533C /* UIKit.framework */; };
+		FFA8357B1E8B951C0064533C /* libz.1.2.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FFA8357A1E8B951C0064533C /* libz.1.2.5.tbd */; };
+		FFA835CB1E8BA38B0064533C /* BDVRSConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = FFA835831E8BA38B0064533C /* BDVRSConfig.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FFA835CC1E8BA38B0064533C /* CADebugMacros.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FFA835861E8BA38B0064533C /* CADebugMacros.cpp */; };
+		FFA835CD1E8BA38B0064533C /* CAStreamBasicDescription.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FFA835891E8BA38B0064533C /* CAStreamBasicDescription.cpp */; };
+		FFA835CE1E8BA38B0064533C /* CAXException.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FFA8358B1E8BA38B0064533C /* CAXException.cpp */; };
+		FFA835DE1E8BA38B0064533C /* libBDVoiceRecognitionClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FFA835AA1E8BA38B0064533C /* libBDVoiceRecognitionClient.a */; };
+		FFA835DF1E8BA38B0064533C /* TTTAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = FFA835AD1E8BA38B0064533C /* TTTAttributedLabel.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FFA835EF1E8BA38B0064533C /* BDVRPickerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FFA835C31E8BA38B0064533C /* BDVRPickerTableViewCell.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FFA835F01E8BA38B0064533C /* BDVRClientUIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FFA835C61E8BA38B0064533C /* BDVRClientUIManager.m */; };
+		FFA835F11E8BA38B0064533C /* BDVRCustomRecognitonViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = FFA835C81E8BA38B0064533C /* BDVRCustomRecognitonViewController.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FFA835F21E8BA38B0064533C /* VRClientParsor.m in Sources */ = {isa = PBXBuildFile; fileRef = FFA835CA1E8BA38B0064533C /* VRClientParsor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FFA835F41E8BA3AE0064533C /* BDVoiceRecognitionClientResources in Resources */ = {isa = PBXBuildFile; fileRef = FFA835F31E8BA3AE0064533C /* BDVoiceRecognitionClientResources */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FFA834AE1E8B91720064533C /* BDYY_DD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BDYY_DD.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFA834B21E8B91720064533C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FFA834B41E8B91720064533C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FFA834B51E8B91720064533C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FFA834B71E8B91720064533C /* BD_VoiceVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BD_VoiceVC.h; sourceTree = "<group>"; };
+		FFA834B81E8B91720064533C /* BD_VoiceVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BD_VoiceVC.m; sourceTree = "<group>"; };
+		FFA834BB1E8B91720064533C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FFA834C01E8B91720064533C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FFA834C21E8B91720064533C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFA834C91E8B91C30064533C /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		FFA834CA1E8B91C30064533C /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		FFA834CD1E8B91CB0064533C /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		FFA834CF1E8B91D10064533C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		FFA834D11E8B91DA0064533C /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		FFA834D31E8B91E50064533C /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		FFA834D51E8B91EA0064533C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		FFA834D71E8B91F00064533C /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		FFA834D91E8B91F60064533C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FFA834DB1E8B91FE0064533C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FFA834DD1E8B920B0064533C /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		FFA834DF1E8B92100064533C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		FFA834E11E8B92160064533C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		FFA834E31E8B921B0064533C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FFA8357A1E8B951C0064533C /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
+		FFA835811E8BA38B0064533C /* BDVRConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDVRConstants.h; sourceTree = "<group>"; };
+		FFA835821E8BA38B0064533C /* BDVRSConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDVRSConfig.h; sourceTree = "<group>"; };
+		FFA835831E8BA38B0064533C /* BDVRSConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDVRSConfig.m; sourceTree = "<group>"; };
+		FFA835861E8BA38B0064533C /* CADebugMacros.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CADebugMacros.cpp; sourceTree = "<group>"; };
+		FFA835871E8BA38B0064533C /* CADebugMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADebugMacros.h; sourceTree = "<group>"; };
+		FFA835881E8BA38B0064533C /* CAMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAMath.h; sourceTree = "<group>"; };
+		FFA835891E8BA38B0064533C /* CAStreamBasicDescription.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CAStreamBasicDescription.cpp; sourceTree = "<group>"; };
+		FFA8358A1E8BA38B0064533C /* CAStreamBasicDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAStreamBasicDescription.h; sourceTree = "<group>"; };
+		FFA8358B1E8BA38B0064533C /* CAXException.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CAXException.cpp; sourceTree = "<group>"; };
+		FFA8358C1E8BA38B0064533C /* CAXException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAXException.h; sourceTree = "<group>"; };
+		FFA8358E1E8BA38B0064533C /* BDRecognizerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDRecognizerViewController.h; sourceTree = "<group>"; };
+		FFA8358F1E8BA38B0064533C /* BDRecognizerViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDRecognizerViewDelegate.h; sourceTree = "<group>"; };
+		FFA835901E8BA38B0064533C /* BDRecognizerViewParamsObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDRecognizerViewParamsObject.h; sourceTree = "<group>"; };
+		FFA835911E8BA38B0064533C /* BDTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDTheme.h; sourceTree = "<group>"; };
+		FFA835921E8BA38B0064533C /* BDVoiceRecognitionClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDVoiceRecognitionClient.h; sourceTree = "<group>"; };
+		FFA835A51E8BA38B0064533C /* BDVRDataUploader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDVRDataUploader.h; sourceTree = "<group>"; };
+		FFA835A61E8BA38B0064533C /* BDVRFileRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDVRFileRecognizer.h; sourceTree = "<group>"; };
+		FFA835A71E8BA38B0064533C /* BDVRLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDVRLogger.h; sourceTree = "<group>"; };
+		FFA835A81E8BA38B0064533C /* BDVRRawDataRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDVRRawDataRecognizer.h; sourceTree = "<group>"; };
+		FFA835A91E8BA38B0064533C /* BDVRUIPromptTextCustom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDVRUIPromptTextCustom.h; sourceTree = "<group>"; };
+		FFA835AA1E8BA38B0064533C /* libBDVoiceRecognitionClient.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libBDVoiceRecognitionClient.a; sourceTree = "<group>"; };
+		FFA835AC1E8BA38B0064533C /* TTTAttributedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTAttributedLabel.h; sourceTree = "<group>"; };
+		FFA835AD1E8BA38B0064533C /* TTTAttributedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTAttributedLabel.m; sourceTree = "<group>"; };
+		FFA835C21E8BA38B0064533C /* BDVRPickerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDVRPickerTableViewCell.h; sourceTree = "<group>"; };
+		FFA835C31E8BA38B0064533C /* BDVRPickerTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDVRPickerTableViewCell.m; sourceTree = "<group>"; };
+		FFA835C51E8BA38B0064533C /* BDVRClientUIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDVRClientUIManager.h; sourceTree = "<group>"; };
+		FFA835C61E8BA38B0064533C /* BDVRClientUIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDVRClientUIManager.m; sourceTree = "<group>"; };
+		FFA835C71E8BA38B0064533C /* BDVRCustomRecognitonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDVRCustomRecognitonViewController.h; sourceTree = "<group>"; };
+		FFA835C81E8BA38B0064533C /* BDVRCustomRecognitonViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BDVRCustomRecognitonViewController.mm; sourceTree = "<group>"; };
+		FFA835C91E8BA38B0064533C /* VRClientParsor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VRClientParsor.h; sourceTree = "<group>"; };
+		FFA835CA1E8BA38B0064533C /* VRClientParsor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VRClientParsor.m; sourceTree = "<group>"; };
+		FFA835F31E8BA3AE0064533C /* BDVoiceRecognitionClientResources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = BDVoiceRecognitionClientResources; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FFA834AB1E8B91720064533C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFA8357B1E8B951C0064533C /* libz.1.2.5.tbd in Frameworks */,
+				FFA834DA1E8B91F60064533C /* CoreGraphics.framework in Frameworks */,
+				FFA834E41E8B921B0064533C /* UIKit.framework in Frameworks */,
+				FFA834E21E8B92160064533C /* SystemConfiguration.framework in Frameworks */,
+				FFA834E01E8B92100064533C /* Security.framework in Frameworks */,
+				FFA834DE1E8B920B0064533C /* MobileCoreServices.framework in Frameworks */,
+				FFA834DC1E8B91FE0064533C /* Foundation.framework in Frameworks */,
+				FFA834D81E8B91F00064533C /* CFNetwork.framework in Frameworks */,
+				FFA834D61E8B91EA0064533C /* AVFoundation.framework in Frameworks */,
+				FFA834D41E8B91E50064533C /* AudioToolbox.framework in Frameworks */,
+				FFA834D21E8B91DA0064533C /* OpenGLES.framework in Frameworks */,
+				FFA834D01E8B91D10064533C /* QuartzCore.framework in Frameworks */,
+				FFA834CE1E8B91CB0064533C /* GLKit.framework in Frameworks */,
+				FFA834CB1E8B91C30064533C /* CoreTelephony.framework in Frameworks */,
+				FFA834CC1E8B91C30064533C /* CoreText.framework in Frameworks */,
+				FFA835DE1E8BA38B0064533C /* libBDVoiceRecognitionClient.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FFA834A51E8B91720064533C = {
+			isa = PBXGroup;
+			children = (
+				FFA834B01E8B91720064533C /* BDYY_DD */,
+				FFA834AF1E8B91720064533C /* Products */,
+				FFA834C81E8B91C30064533C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FFA834AF1E8B91720064533C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFA834AE1E8B91720064533C /* BDYY_DD.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FFA834B01E8B91720064533C /* BDYY_DD */ = {
+			isa = PBXGroup;
+			children = (
+				FFA835801E8BA38B0064533C /* BDYY_CLADD */,
+				FFA834B41E8B91720064533C /* AppDelegate.h */,
+				FFA834B51E8B91720064533C /* AppDelegate.m */,
+				FFA834B71E8B91720064533C /* BD_VoiceVC.h */,
+				FFA834B81E8B91720064533C /* BD_VoiceVC.m */,
+				FFA834BA1E8B91720064533C /* Main.storyboard */,
+				FFA834BF1E8B91720064533C /* LaunchScreen.storyboard */,
+				FFA834C21E8B91720064533C /* Info.plist */,
+				FFA834B11E8B91720064533C /* Supporting Files */,
+			);
+			path = BDYY_DD;
+			sourceTree = "<group>";
+		};
+		FFA834B11E8B91720064533C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FFA834B21E8B91720064533C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FFA834C81E8B91C30064533C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FFA8357A1E8B951C0064533C /* libz.1.2.5.tbd */,
+				FFA834E31E8B921B0064533C /* UIKit.framework */,
+				FFA834E11E8B92160064533C /* SystemConfiguration.framework */,
+				FFA834DF1E8B92100064533C /* Security.framework */,
+				FFA834DD1E8B920B0064533C /* MobileCoreServices.framework */,
+				FFA834DB1E8B91FE0064533C /* Foundation.framework */,
+				FFA834D91E8B91F60064533C /* CoreGraphics.framework */,
+				FFA834D71E8B91F00064533C /* CFNetwork.framework */,
+				FFA834D51E8B91EA0064533C /* AVFoundation.framework */,
+				FFA834D31E8B91E50064533C /* AudioToolbox.framework */,
+				FFA834D11E8B91DA0064533C /* OpenGLES.framework */,
+				FFA834CF1E8B91D10064533C /* QuartzCore.framework */,
+				FFA834CD1E8B91CB0064533C /* GLKit.framework */,
+				FFA834C91E8B91C30064533C /* CoreTelephony.framework */,
+				FFA834CA1E8B91C30064533C /* CoreText.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FFA835801E8BA38B0064533C /* BDYY_CLADD */ = {
+			isa = PBXGroup;
+			children = (
+				FFA835811E8BA38B0064533C /* BDVRConstants.h */,
+				FFA835821E8BA38B0064533C /* BDVRSConfig.h */,
+				FFA835831E8BA38B0064533C /* BDVRSConfig.m */,
+				FFA835841E8BA38B0064533C /* Libs */,
+				FFA835C11E8BA38B0064533C /* Views */,
+				FFA835AE1E8BA38B0064533C /* Resources */,
+			);
+			path = BDYY_CLADD;
+			sourceTree = "<group>";
+		};
+		FFA835841E8BA38B0064533C /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				FFA835851E8BA38B0064533C /* CoreAudioUtility */,
+				FFA8358D1E8BA38B0064533C /* libBDVoiceRecognitionClient */,
+				FFA835AB1E8BA38B0064533C /* TTTAttributedLabel */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		FFA835851E8BA38B0064533C /* CoreAudioUtility */ = {
+			isa = PBXGroup;
+			children = (
+				FFA835861E8BA38B0064533C /* CADebugMacros.cpp */,
+				FFA835871E8BA38B0064533C /* CADebugMacros.h */,
+				FFA835881E8BA38B0064533C /* CAMath.h */,
+				FFA835891E8BA38B0064533C /* CAStreamBasicDescription.cpp */,
+				FFA8358A1E8BA38B0064533C /* CAStreamBasicDescription.h */,
+				FFA8358B1E8BA38B0064533C /* CAXException.cpp */,
+				FFA8358C1E8BA38B0064533C /* CAXException.h */,
+			);
+			path = CoreAudioUtility;
+			sourceTree = "<group>";
+		};
+		FFA8358D1E8BA38B0064533C /* libBDVoiceRecognitionClient */ = {
+			isa = PBXGroup;
+			children = (
+				FFA8358E1E8BA38B0064533C /* BDRecognizerViewController.h */,
+				FFA8358F1E8BA38B0064533C /* BDRecognizerViewDelegate.h */,
+				FFA835901E8BA38B0064533C /* BDRecognizerViewParamsObject.h */,
+				FFA835911E8BA38B0064533C /* BDTheme.h */,
+				FFA835921E8BA38B0064533C /* BDVoiceRecognitionClient.h */,
+				FFA835A51E8BA38B0064533C /* BDVRDataUploader.h */,
+				FFA835A61E8BA38B0064533C /* BDVRFileRecognizer.h */,
+				FFA835A71E8BA38B0064533C /* BDVRLogger.h */,
+				FFA835A81E8BA38B0064533C /* BDVRRawDataRecognizer.h */,
+				FFA835A91E8BA38B0064533C /* BDVRUIPromptTextCustom.h */,
+				FFA835AA1E8BA38B0064533C /* libBDVoiceRecognitionClient.a */,
+			);
+			path = libBDVoiceRecognitionClient;
+			sourceTree = "<group>";
+		};
+		FFA835AB1E8BA38B0064533C /* TTTAttributedLabel */ = {
+			isa = PBXGroup;
+			children = (
+				FFA835AC1E8BA38B0064533C /* TTTAttributedLabel.h */,
+				FFA835AD1E8BA38B0064533C /* TTTAttributedLabel.m */,
+			);
+			path = TTTAttributedLabel;
+			sourceTree = "<group>";
+		};
+		FFA835AE1E8BA38B0064533C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FFA835F31E8BA3AE0064533C /* BDVoiceRecognitionClientResources */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FFA835C11E8BA38B0064533C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FFA835C21E8BA38B0064533C /* BDVRPickerTableViewCell.h */,
+				FFA835C31E8BA38B0064533C /* BDVRPickerTableViewCell.m */,
+				FFA835C41E8BA38B0064533C /* CustomRecognitionView */,
+				FFA835C91E8BA38B0064533C /* VRClientParsor.h */,
+				FFA835CA1E8BA38B0064533C /* VRClientParsor.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FFA835C41E8BA38B0064533C /* CustomRecognitionView */ = {
+			isa = PBXGroup;
+			children = (
+				FFA835C51E8BA38B0064533C /* BDVRClientUIManager.h */,
+				FFA835C61E8BA38B0064533C /* BDVRClientUIManager.m */,
+				FFA835C71E8BA38B0064533C /* BDVRCustomRecognitonViewController.h */,
+				FFA835C81E8BA38B0064533C /* BDVRCustomRecognitonViewController.mm */,
+			);
+			path = CustomRecognitionView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FFA834AD1E8B91720064533C /* BDYY_DD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFA834C51E8B91720064533C /* Build configuration list for PBXNativeTarget "BDYY_DD" */;
+			buildPhases = (
+				FFA834AA1E8B91720064533C /* Sources */,
+				FFA834AB1E8B91720064533C /* Frameworks */,
+				FFA834AC1E8B91720064533C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BDYY_DD;
+			productName = BDYY_DD;
+			productReference = FFA834AE1E8B91720064533C /* BDYY_DD.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FFA834A61E8B91720064533C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = CHENLEIJING;
+				TargetAttributes = {
+					FFA834AD1E8B91720064533C = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = MEQ6757F8J;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = FFA834A91E8B91720064533C /* Build configuration list for PBXProject "BDYY_DD" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FFA834A51E8B91720064533C;
+			productRefGroup = FFA834AF1E8B91720064533C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FFA834AD1E8B91720064533C /* BDYY_DD */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FFA834AC1E8B91720064533C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFA834C11E8B91720064533C /* LaunchScreen.storyboard in Resources */,
+				FFA834BC1E8B91720064533C /* Main.storyboard in Resources */,
+				FFA835F41E8BA3AE0064533C /* BDVoiceRecognitionClientResources in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FFA834AA1E8B91720064533C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFA835EF1E8BA38B0064533C /* BDVRPickerTableViewCell.m in Sources */,
+				FFA835F11E8BA38B0064533C /* BDVRCustomRecognitonViewController.mm in Sources */,
+				FFA834B91E8B91720064533C /* BD_VoiceVC.m in Sources */,
+				FFA835F01E8BA38B0064533C /* BDVRClientUIManager.m in Sources */,
+				FFA834B61E8B91720064533C /* AppDelegate.m in Sources */,
+				FFA835F21E8BA38B0064533C /* VRClientParsor.m in Sources */,
+				FFA834B31E8B91720064533C /* main.m in Sources */,
+				FFA835DF1E8BA38B0064533C /* TTTAttributedLabel.m in Sources */,
+				FFA835CC1E8BA38B0064533C /* CADebugMacros.cpp in Sources */,
+				FFA835CB1E8BA38B0064533C /* BDVRSConfig.m in Sources */,
+				FFA835CE1E8BA38B0064533C /* CAXException.cpp in Sources */,
+				FFA835CD1E8BA38B0064533C /* CAStreamBasicDescription.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FFA834BA1E8B91720064533C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFA834BB1E8B91720064533C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FFA834BF1E8B91720064533C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFA834C01E8B91720064533C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FFA834C31E8B91720064533C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FFA834C41E8B91720064533C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FFA834C61E8B91720064533C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = MEQ6757F8J;
+				INFOPLIST_FILE = BDYY_DD/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libBDVoiceRecognitionClient",
+					"$(PROJECT_DIR)/BDYY_DD/BDYY_CLADD/Libs/libBDVoiceRecognitionClient",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "CoreDataTest.BDYY-DD";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FFA834C71E8B91720064533C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = MEQ6757F8J;
+				INFOPLIST_FILE = BDYY_DD/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libBDVoiceRecognitionClient",
+					"$(PROJECT_DIR)/BDYY_DD/BDYY_CLADD/Libs/libBDVoiceRecognitionClient",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "CoreDataTest.BDYY-DD";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FFA834A91E8B91720064533C /* Build configuration list for PBXProject "BDYY_DD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFA834C31E8B91720064533C /* Debug */,
+				FFA834C41E8B91720064533C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFA834C51E8B91720064533C /* Build configuration list for PBXNativeTarget "BDYY_DD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFA834C61E8B91720064533C /* Debug */,
+				FFA834C71E8B91720064533C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FFA834A61E8B91720064533C /* Project object */;
+}
